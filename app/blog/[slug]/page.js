@@ -108,8 +108,8 @@ export default function BlogDetailPage({ params }) {
             <Image
               src={post.coverImage}
               alt=""
-              width={1200}
-              height={675}
+              width={1600}
+              height={900}
               priority
               className="aspect-[16/9] w-full object-cover"
             />

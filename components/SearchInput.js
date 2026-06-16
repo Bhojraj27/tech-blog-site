@@ -18,7 +18,7 @@ export function SearchInput({ value, onChange }) {
           value={value}
           onChange={(event) => onChange(event.target.value)}
           placeholder="Search posts, tags, authors"
-          className="min-h-12 w-full rounded-md border border-line bg-white pl-10 pr-4 text-sm font-semibold text-ink outline-none transition placeholder:text-zinc-500 focus:border-teal focus:ring-2 focus:ring-teal/20"
+          className="min-h-12 w-full rounded-md border border-line bg-white pl-10 pr-4 text-sm font-semibold text-ink shadow-sm outline-none transition placeholder:text-zinc-500 focus:border-teal focus:ring-2 focus:ring-teal/20"
         />
       </div>
     </div>

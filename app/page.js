@@ -47,7 +47,7 @@ export default function HomePage() {
           </div>
           <Link
             href="/blog"
-            className="inline-flex w-fit items-center gap-2 rounded-md bg-ink px-4 py-3 text-sm font-bold text-white transition hover:bg-teal focus:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2"
+            className="inline-flex w-fit items-center gap-2 rounded-md bg-ink px-4 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-teal focus:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2"
           >
             Browse all
             <ArrowRight size={17} aria-hidden="true" />
@@ -82,8 +82,8 @@ export default function HomePage() {
 
 function InsightCard({ icon, title, copy }) {
   return (
-    <div className="rounded-lg border border-line bg-white p-5 shadow-sm">
-      <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-md bg-paper text-teal">
+    <div className="rounded-lg border border-line bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-teal/30 hover:shadow-soft">
+      <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-md bg-teal/10 text-teal">
         {icon}
       </div>
       <h3 className="text-lg font-extrabold text-ink">{title}</h3>

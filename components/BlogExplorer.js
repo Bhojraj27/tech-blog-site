@@ -32,7 +32,7 @@ export function BlogExplorer({ posts, categories, compact = false }) {
 
   return (
     <div className="space-y-6">
-      <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start">
+      <div className="grid gap-4 rounded-lg border border-line bg-white/72 p-4 shadow-sm lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start">
         <div>
           <div className="mb-3 flex items-center gap-2 text-sm font-bold text-zinc-700">
             <Layers3 size={16} aria-hidden="true" />
@@ -49,7 +49,7 @@ export function BlogExplorer({ posts, categories, compact = false }) {
                   onClick={() => setActiveCategory(category)}
                   className={`rounded-md border px-3 py-2 text-sm font-bold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2 ${
                     isActive
-                      ? "border-ink bg-ink text-white"
+                      ? "border-ink bg-ink text-white shadow-sm"
                       : "border-line bg-white text-zinc-700 hover:border-teal hover:text-teal"
                   }`}
                 >
